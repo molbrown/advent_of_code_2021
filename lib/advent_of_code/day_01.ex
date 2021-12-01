@@ -21,14 +21,7 @@ defmodule AdventOfCode.Day01 do
     Stream.chunk_every(input, 3, 1, :discard)
     |> Enum.to_list()
     |> Enum.map( fn chunk -> Enum.sum(chunk) end)
-    |> Enum.chunk_every(2, 1, :discard)
-    |> Enum.map( fn [a,b] ->
-        case a do
-          a when a < b -> 1
-          _ -> 0
-        end
-      end)
-    |> Enum.sum()
+    |> part1()
 
     IO.puts "\nthe number of times the sum of measurements in this sliding window increases is: \ #{count} \."
 
