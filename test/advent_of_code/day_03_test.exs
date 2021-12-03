@@ -10,11 +10,10 @@ defmodule AdventOfCode.Day03Test do
     assert 198 == result
   end
 
-  @tag :skip
   test "part2" do
-    input = nil
+    input = ["00100", "11110", "10110", "10111", "10101", "01111", "00111", "11100", "10000", "11001", "00010", "01010"]
     result = part2(input)
 
-    assert result
+    assert 230 == result
   end
 end
