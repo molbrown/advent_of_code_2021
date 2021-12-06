@@ -3,19 +3,39 @@ defmodule AdventOfCode.Day05Test do
 
   import AdventOfCode.Day05
 
-  @tag :skip
   test "part1" do
-    input = nil
+    input = [
+      [%{x: 0, y: 9}, %{x: 5, y: 9}],
+      [%{x: 8, y: 0}, %{x: 0, y: 8}],
+      [%{x: 9, y: 4}, %{x: 3, y: 4}],
+      [%{x: 2, y: 2}, %{x: 2, y: 1}],
+      [%{x: 7, y: 0}, %{x: 7, y: 4}],
+      [%{x: 6, y: 4}, %{x: 2, y: 0}],
+      [%{x: 0, y: 9}, %{x: 2, y: 9}],
+      [%{x: 3, y: 4}, %{x: 1, y: 4}],
+      [%{x: 0, y: 0}, %{x: 8, y: 8}],
+      [%{x: 5, y: 5}, %{x: 8, y: 2}]
+  ]
     result = part1(input)
 
-    assert result
+    assert 5 == result
   end
 
-  @tag :skip
   test "part2" do
-    input = nil
+    input = [
+      [%{x: 0, y: 9}, %{x: 5, y: 9}],
+      [%{x: 8, y: 0}, %{x: 0, y: 8}],
+      [%{x: 9, y: 4}, %{x: 3, y: 4}],
+      [%{x: 2, y: 2}, %{x: 2, y: 1}],
+      [%{x: 7, y: 0}, %{x: 7, y: 4}],
+      [%{x: 6, y: 4}, %{x: 2, y: 0}],
+      [%{x: 0, y: 9}, %{x: 2, y: 9}],
+      [%{x: 3, y: 4}, %{x: 1, y: 4}],
+      [%{x: 0, y: 0}, %{x: 8, y: 8}],
+      [%{x: 5, y: 5}, %{x: 8, y: 2}]
+  ]
     result = part2(input)
 
-    assert result
+    assert 12 == result
   end
 end
