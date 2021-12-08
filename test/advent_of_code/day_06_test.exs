@@ -10,11 +10,11 @@ defmodule AdventOfCode.Day06Test do
     assert 5934 == result
   end
 
-  @tag :skip
+  @tag timeout: :infinity
   test "part2" do
-    input = nil
+    input = [3,4,3,1,2]
     result = part2(input)
 
-    assert result
+    assert 26984457539 == result
   end
 end
